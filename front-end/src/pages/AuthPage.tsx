@@ -6,7 +6,8 @@ interface IAuth {
 
 }
 
-export default function Auth (props: IAuth) {
+export default function AuthPage (props: IAuth) {
+
    return (
       <EmptyLayout>
          <AuthForm/>

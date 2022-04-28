@@ -23,7 +23,7 @@ const rules = {
                .match(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
             );
             
-            if (value != '' && email === null) {
+            if (value !== '' && email === null) {
                return Promise.reject(new Error('Invalid email!'))
             } else {
                return Promise.resolve()

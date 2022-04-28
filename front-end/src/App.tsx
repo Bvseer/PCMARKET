@@ -1,13 +1,12 @@
 // import  Header  from './components/Header';
 import React from 'react';
-import 'antd/dist/antd.css';
-import Auth from './pages/Auth';
+// import AuthPage from './pages/AuthPage';
+import MainPage from './pages/MainPage';
 
 function App() {
   return (
     <div>
-      {/* <Header/> */}
-      <Auth/>
+      <MainPage/>
     </div>
   );
 }

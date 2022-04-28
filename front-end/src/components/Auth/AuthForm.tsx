@@ -89,7 +89,7 @@ export default function AuthForm (props: IAuthForm) {
                name="auth"
                layout='vertical'
                initialValues={{ remember: true }}
-               onFinish={onFinish}
+               onFinish={onSubmitHandler}
                onFinishFailed={onFinishFailed}
                autoComplete="off"
             >
