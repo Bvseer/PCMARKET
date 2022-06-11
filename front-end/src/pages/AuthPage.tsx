@@ -1,6 +1,6 @@
 import React from 'react'
-import AuthForm from '../components/Auth/AuthForm'
-import EmptyLayout from '../layouts/EmptyLayout'
+import AuthForm from 'components/auth/AuthForm'
+import EmptyLayout from 'layouts/EmptyLayout'
 
 interface IAuth {
 

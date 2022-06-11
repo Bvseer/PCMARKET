@@ -1,6 +1,6 @@
 import { Button, Checkbox, Form, Input, Row, Typography } from 'antd';
 import * as React from 'react';
-import rules from '../../helpers/validationRules';
+import rules from 'helpers/validationRules';
 
 export interface IAuthForm {
 }

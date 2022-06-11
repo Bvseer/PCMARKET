@@ -1,37 +1,23 @@
-import { Button as AntButton, ButtonProps, Col, Layout, Row, Typography } from 'antd'
-import { Content, Footer, Header } from 'antd/lib/layout/layout'
+import { Col, Row } from 'antd'
+import Layout, { Content } from 'antd/lib/layout/layout'
+import MainFooter from 'components/headers/MainFooter'
+import MainHeader from 'components/headers/MainHeader'
 import React from 'react'
-import styled from 'styled-components'
 
 
 export default function MainLayout({children}: any) {
   return (
     <Layout>
-        <Header>
-          <Row justify='space-between'>
-            <Col offset={2}>
-              <Button type='text'>Shops</Button>
-              <Button type='text'>Delivery</Button>
-            </Col>
-            <Col>
-              <Typography.Link style={{color: '#ffff'}}>+99897-777-77-77</Typography.Link>
+        <MainHeader/>
+        <Content >
+          <Row>
+            <Col span={20} offset={2} style={{height: '100vh'}} >
+              {children}
             </Col>
           </Row>
-        </Header>
-        <Content>
-          {children}
         </Content>
-        <Footer>
-
-        </Footer>
+        <MainFooter/>
     </Layout>
   )
 }
 
-
-const Button: React.FunctionComponent<ButtonProps> = styled(AntButton)`
-  color: #ffff;
-  &:hover{
-    color: #cccc;
-  }
-`;
